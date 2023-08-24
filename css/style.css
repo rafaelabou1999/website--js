@@ -1,0 +1,612 @@
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+.menuBurger {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  z-index: 2000 !important;
+}
+
+.menuBurgerList {
+  visibility: hidden;
+  position: absolute;
+  top: 0%;
+  padding-top: 20%;
+  list-style: none;
+  bottom: 10%;
+  right: 0;
+  left: 0;
+  background-color: #0e0e0edf;
+  z-index: 1000 !important;
+  transition: all 0.3s ease-in;
+}
+
+.menuBurgerList ul li {
+  list-style: none;
+}
+
+.menuBurgerList a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.3;
+  border-bottom: 2px solid whitesmoke;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.lines {
+  display: grid;
+  grid-template-columns: repeat(3, 15px);
+  grid-auto-rows: 1.5vh;
+  color: white;
+
+  height: 4vh;
+  text-align: center;
+  width: 4vw;
+  list-style: circle;
+}
+
+.lines li {
+  padding: 5%;
+  list-style: disc;
+  font-size: 1.2rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+
+header {
+  height: 86vh;
+  position: relative;
+}
+.imgBanner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 95vh;
+  width: 100%;
+  object-fit: cover;
+  animation: comein 2s 1;
+}
+
+@keyframes comein {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.out {
+  -webkit-animation: goout 1s 1;
+  -moz-animation: goout 1s 1;
+  animation: goout 2s 1;
+  animation-fill-mode: both;
+}
+@keyframes goout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.menu {
+  width: 100%;
+  margin-left: -1%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  list-style: none;
+  padding-left: 10%;
+  margin-left: 34%;
+  z-index: 2;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(217, 217, 217);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.logo {
+  z-index: 20;
+  width: 100px;
+  margin-left: -50%;
+}
+.menu a:hover {
+  color: rgba(252, 172, 0, 0.833);
+}
+.banner h2 {
+  font-size: 1.4vw;
+
+  width: 100%;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: rgb(217, 217, 217);
+}
+
+.spanBanner {
+  font-size: 3vw;
+  font-family: "Playfair Display", serif;
+
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.btnBanner button {
+  background-color: #636363;
+  border: none;
+  padding: 4% 6%;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+
+.btnBanner button:first-of-type {
+  background-color: #fcf2f2c4;
+  color: #000000;
+  transition: all 1.3s ease-out;
+}
+
+.btnBanner button:first-of-type:hover {
+  background-color: #fcf2f2;
+  color: #000000;
+}
+
+.btnBanner button:nth-of-type(2) {
+  background-color: rgba(0, 0, 0, 0.621);
+  color: white;
+  transition: all 1.3s ease-out;
+}
+.btnBanner button:nth-of-type(2):hover {
+  background-color: #fcf2f2;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
+/*photo menu*/
+.photoMenu {
+  color: black;
+  height: 9vh;
+  margin-top: 1.5%;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+
+  text-align: center;
+  padding-top: 1%;
+}
+
+.photoMenu button {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5% 1%;
+  margin-top: 0.6%;
+  font-weight: 100;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+  cursor:pointer;
+}
+
+/*IMAGES*/
+main {
+  position: relative;
+}
+.imagesMain {
+  display: grid;
+  grid-template-columns: repeat(3, calc(60% / 3));
+  text-align: center;
+
+  width: 100%;
+}
+
+.imagesMain img {
+  width: 20%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+/*footers*/
+footer {
+  position: relative;
+}
+.myFooter {
+  background-color: #000000;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.pageFooter {
+  margin-top: 4%;
+  background-color: #e7dede;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.icons i {
+  padding: 1%;
+
+  color: rgb(40, 39, 39);
+  font-size: 1.5rem;
+  background-color: rgba(166, 113, 0, 0.833);
+  transition: all 0.4s ease-in;
+}
+
+.fb:hover,
+.linked:hover {
+  background-color: #e7dede;
+  color: rgb(100, 149, 255);
+}
+
+.insta:hover {
+  background-color: #e7dede;
+  color: rgb(151, 70, 103);
+}
+
+.x:hover {
+  color: black;
+  background-color: #e7dede;
+}
+*,
+html {
+  scroll-behavior: smooth !important;
+}
+
+.menuBurger {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 2%;
+  right: 8%;
+  z-index: 2000 !important;
+}
+
+.menuBurgerList {
+  visibility: hidden;
+  position: absolute;
+  top: 15%;
+  right:4%;
+  left:70%;
+  max-width:100px;
+ 
+  bottom:130% !important;
+  padding-top: 20%;
+  list-style: none;
+  margin-right:7%;
+  right: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  z-index: 1000 !important;
+  transition: all 0.3s ease-in;
+  border-left: 10px solid rgba(166, 113, 0, 0.833);
+}
+
+.menuBurgerList ul li {
+  list-style: none;
+}
+
+.menuBurgerList a {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 2.3;
+  
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.lines {
+  display: grid;
+  grid-template-columns: repeat(3, 15px);
+  grid-auto-rows: 1.5vh;
+  color: white;
+
+  height: 4vh;
+  text-align: center;
+  width: 4vw;
+  list-style: circle;
+}
+
+.menu-item a[href="#home"]{
+  position: absolute;
+  top:23%;
+  right:51%;
+  bottom:60%;
+ 
+}
+
+.menu-item a[href="#imgs"]{
+  position: absolute;
+  top:44%;
+  right:38%;
+  bottom:10%;
+}
+.lines li {
+  padding: 5%;
+  list-style: disc;
+  font-size: 1.2rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+
+header {
+  height: 86vh;
+  position: relative;
+}
+.imgBanner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 95vh;
+  width: 100%;
+  object-fit: cover;
+  animation: comein 2s 1;
+}
+
+@keyframes comein {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.out {
+  -webkit-animation: goout 1s 1;
+  -moz-animation: goout 1s 1;
+  animation: goout 2s 1;
+  animation-fill-mode: both;
+}
+@keyframes goout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.menu {
+  width: 100%;
+  margin-left: -1%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  list-style: none;
+  padding-left: 10%;
+  margin-left: 34%;
+  z-index: 2;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(217, 217, 217);
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.logo {
+  z-index: 20;
+  width: 100px;
+  margin-left: -50%;
+}
+.menu a:hover {
+  color: rgba(252, 172, 0, 0.833);
+}
+.banner h2 {
+  font-size: 1.4vw;
+
+  width: 100%;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: rgb(217, 217, 217);
+}
+
+.spanBanner {
+  font-size: 3vw;
+  font-family: "Playfair Display", serif;
+
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 2;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.btnBanner button {
+  background-color: #636363;
+  border: none;
+  padding: 4% 6%;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.btnBanner button:first-of-type {
+  background-color: #fcf2f2c4;
+  color: #000000;
+  transition: all 1.3s ease-out;
+}
+
+.btnBanner button:first-of-type:hover {
+  background-color: #fcf2f2;
+  color: #000000;
+}
+
+.btnBanner button:nth-of-type(2) {
+  background-color: rgba(0, 0, 0, 0.621);
+  color: white;
+  transition: all 1.3s ease-out;
+}
+.btnBanner button:nth-of-type(2):hover {
+  background-color: #fcf2f2;
+  border: none;
+  color: rgb(0, 0, 0);
+}
+
+/*photo menu*/
+.photoMenu {
+  color: black;
+  height: 9vh;
+  margin-top: 1.5%;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+.photoMenu button {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5% 1%;
+  margin-top: 0.6%;
+  font-weight: 100;
+  border-radius: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+/*IMAGES*/
+main {
+  position: relative;
+}
+.imagesMain {
+  display: grid;
+  grid-template-columns: repeat(3, 26rem);
+  grid-auto-rows: 26rem;
+  padding-top: 4%;
+  width: 100%;
+  padding-left: 10%;
+}
+
+.imagesMain img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+/*footers*/
+footer {
+  position: relative;
+}
+.myFooter {
+  background-color: #000000;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-weight: 100;
+  font-size: 0.8rem !important;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.pageFooter {
+  margin-top: 4%;
+  background-color: #e7dede;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.icons i {
+  padding: 1%;
+
+  color: rgb(40, 39, 39);
+  font-size: 1.5rem;
+  background-color: rgba(166, 113, 0, 0.833);
+  transition: all 0.4s ease-in;
+}
+
+.fb:hover,
+.linked:hover {
+  background-color: #e7dede;
+  color: rgb(100, 149, 255);
+}
+
+.insta:hover {
+  background-color: #e7dede;
+  color: rgb(151, 70, 103);
+}
+
+.x:hover {
+  color: black;
+  background-color: #e7dede;
+}
+
