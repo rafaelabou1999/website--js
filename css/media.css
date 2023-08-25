@@ -45,11 +45,11 @@
   grid-auto-rows: 26rem;
   padding-top: 4%;
   width: 100%;
-  padding-left: 9.7% !important;
+  padding-left: 9% !important;
 }
 
 .imagesMain img {
-  width: min(30vw, 22rem) !important;
+  width: 25rem !important;
   height: 26vw !important;
   object-fit: cover;
 }
