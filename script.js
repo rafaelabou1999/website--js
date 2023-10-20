@@ -1,4 +1,3 @@
-
 let img = document.querySelector(".imgBanner");
 let images = [
   "images/img111.jpg",
@@ -31,16 +30,20 @@ let buttons = document.querySelectorAll(".btnMenu");
 
 function clearBtn() {
   for (eachBtn of buttons) {
-    eachBtn.style.border = "none";
+    eachBtn.style.backgroundColor = "transparent";
+    eachBtn.style.color = "#fff";
   }
 }
-
-btnAll.style.border =  "1px solid rgba(166, 113, 0, 0.833)";
+btnAll.style.color = "#000";
+btnAll.style.backgroundColor = "#cda554";
+btnAll.style.fontWeight = "400";
 /**EVENTS */
 btnNature.addEventListener("click", function () {
   clearBtn();
   imagesBox.innerHTML = "";
-  btnNature.style.border = "1px solid rgba(166, 113, 0, 0.833)";
+  btnNature.style.color = "#000";
+  btnNature.style.backgroundColor = "#cda554";
+  btnNature.style.fontWeight = "400";
   for (imgEach of imgNature) {
     imgEach.style.height = "90%";
     imgEach.style.width = "90%";
@@ -54,7 +57,9 @@ btnNature.addEventListener("click", function () {
 btnWedding.addEventListener("click", function () {
   clearBtn();
   imagesBox.innerHTML = "";
-  btnWedding.style.border = "1px solid rgba(166, 113, 0, 0.833)";
+  btnWedding.style.color = "#000";
+  btnWedding.style.backgroundColor = "#cda554";
+  btnWedding.style.fontWeight = "400";
   for (imgEach of imgWedding) {
     imgEach.style.height = "90%";
     imgEach.style.width = "90%";
@@ -69,7 +74,9 @@ btnWedding.addEventListener("click", function () {
 btnAbstract.addEventListener("click", function () {
   clearBtn();
   imagesBox.innerHTML = "";
-  btnAbstract.style.border = "1px solid rgba(166, 113, 0, 0.833)";
+  btnAbstract.style.color = "#000";
+  btnAbstract.style.backgroundColor = "#cda554";
+  btnAbstract.style.fontWeight = "400";
   for (imgEach of imgAbstract) {
     imgEach.style.height = "90%";
     imgEach.style.width = "90%";
@@ -84,7 +91,9 @@ btnAbstract.addEventListener("click", function () {
 btnAll.addEventListener("click", function () {
   clearBtn();
   imagesBox.innerHTML = "";
-  btnAll.style.border = "1px solid rgba(166, 113, 0, 0.833)";
+  btnAll.style.color = "#000";
+  btnAll.style.backgroundColor = "#cda554";
+  btnAll.style.fontWeight = "400";
   for (imgEach of imgAll) {
     imgEach.style.height = "90%";
     imgEach.style.width = "90%";
@@ -114,5 +123,3 @@ for (item of menuItem) {
     list.style.visibility = "hidden";
   });
 }
-
-
