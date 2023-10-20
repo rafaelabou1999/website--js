@@ -336,7 +336,7 @@
     width: 100%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-46%);
   }
   .imagesMain img {
     width: 18rem !important;
@@ -366,7 +366,7 @@
     width: 100%;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-46.5%);
   }
 
   .imagesMain img {
