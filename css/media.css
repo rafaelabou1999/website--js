@@ -246,14 +246,25 @@
 
   .imagesMain {
     display: grid;
-    grid-template-columns: repeat(1, 75vw) !important;
+    grid-template-columns: repeat(1, 19rem) !important;
     grid-auto-rows: 23rem !important;
     padding-top: 4%;
-    padding-left: 9.2% !important;
     width: 100%;
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-45%);
   }
 
+  .pageFooter {
+    display: none;
+    height: 0;
+  }
+
+  .myFooter {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 1%;
+  }
   .imagesMain img {
     width: 70vw !important;
     height: 22rem !important;
@@ -323,32 +334,55 @@
     grid-auto-rows: 23rem !important;
     padding-top: 4%;
     width: 100%;
-    position: relative;
-    padding-left: max(5%, 1.3rem) !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
   .imagesMain img {
     width: 18rem !important;
     height: 22rem !important;
     object-fit: cover;
+  }
+
+  .pageFooter {
+    display: none;
+    height: 0;
+  }
+
+  .myFooter {
+    position: fixed;
+    bottom: 0;
+
+    padding-bottom: 1%;
   }
 }
 
 @media screen and (max-width: 350px) {
   .imagesMain {
     display: grid;
-    grid-template-columns: repeat(1, 17rem) !important;
-    grid-auto-rows: 19rem !important;
+    grid-template-columns: repeat(1, 19rem) !important;
+    grid-auto-rows: 23rem !important;
     padding-top: 4%;
     width: 100%;
-    position: relative;
-    padding-left: 0% !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .imagesMain img {
     width: 15rem !important;
     height: 18rem !important;
     object-fit: cover;
+  }
+
+  .pageFooter {
+    display: none;
+    height: 0;
+  }
+
+  .myFooter {
+    position: fixed;
+    bottom: 0;
   }
 }
 
@@ -359,12 +393,25 @@
     grid-auto-rows: 23rem !important;
     padding-top: 4%;
     width: 100%;
-    position: relative;
-    padding-left: 4.5% !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .imagesMain img {
     width: 18rem !important;
     height: 22rem !important;
     object-fit: cover;
+  }
+
+  .pageFooter {
+    display: none;
+    height: 0;
+  }
+
+  .myFooter {
+    position: fixed;
+    bottom: 0;
+
+    padding-bottom: 1%;
   }
 }
