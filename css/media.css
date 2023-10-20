@@ -4,55 +4,54 @@
   }
 }
 
-@media screen and (min-width: 1390px){
+@media screen and (min-width: 1390px) {
   .imagesMain {
-  display: grid;
-  grid-template-columns: repeat(3, 26rem);
-  grid-auto-rows: 26rem;
-  padding-top: 4%;
-  width: 100%;
-  padding-left:33% !important;
-}
-  
-.imagesMain img {
-  width: 24rem !important;
-  height: 24rem !important;
-  object-fit: cover;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 26rem);
+    grid-auto-rows: 26rem;
+    padding-top: 4%;
+    width: 100%;
+    padding-left: 33% !important;
+  }
+
+  .imagesMain img {
+    width: 24rem !important;
+    height: 24rem !important;
+    object-fit: cover;
+  }
 }
 
-@media screen and (min-width:1550px){
+@media screen and (min-width: 1550px) {
   .imagesMain {
-  display: grid;
-  grid-template-columns: repeat(3, 26rem);
-  grid-auto-rows: 26rem;
-  padding-top: 4%;
-  width: 100%;
-  padding-left: 16% !important;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 26rem);
+    grid-auto-rows: 26rem;
+    padding-top: 4%;
+    width: 100%;
+    padding-left: 12.5% !important;
+  }
 
-.imagesMain img {
-  width: 24rem !important;
-  height: 24rem !important;
-  object-fit: cover;
+  .imagesMain img {
+    width: 24rem !important;
+    height: 24rem !important;
+    object-fit: cover;
+  }
 }
-}
-@media screen and (max-width:1550px) and (min-width:1350px){
- 
+@media screen and (max-width: 1550px) and (min-width: 1350px) {
   .imagesMain {
-  display: grid;
-  grid-template-columns: repeat(3, 26rem);
-  grid-auto-rows: 26rem;
-  padding-top: 4%;
-  width: 100%;
-  padding-left: 9% !important;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 26rem);
+    grid-auto-rows: 26rem;
+    padding-top: 4%;
+    width: 100%;
+    padding-left: 9% !important;
+  }
 
-.imagesMain img {
-  width: 25rem !important;
-  height: 26vw !important;
-  object-fit: cover;
-}
+  .imagesMain img {
+    width: 25rem !important;
+    height: 26vw !important;
+    object-fit: cover;
+  }
 }
 @media screen and (min-width: 1000px) and (max-width: 1350px) {
   .imagesMain {
@@ -65,12 +64,14 @@
     position: relative;
   }
 
-  
-
   .imagesMain img {
     width: 30vw !important;
     height: 22rem !important;
     object-fit: cover;
+  }
+
+  .logo {
+    margin-left: -50% !important;
   }
 }
 
@@ -117,7 +118,7 @@
     grid-template-columns: repeat(1, 1fr) !important;
     grid-auto-rows: 23rem !important;
     padding-top: 4%;
-    margin-left:2%;
+    margin-left: 2%;
     width: 100%;
     position: relative;
   }
@@ -134,7 +135,6 @@
     display: block !important;
   }
 
-
   .menu ul li {
     display: none;
     height: 0;
@@ -144,6 +144,7 @@
   .logo {
     position: absolute;
     top: 5%;
+    margin-left: -70% !important;
   }
 
   header {
@@ -197,19 +198,18 @@
     height: 0;
     width: 0;
   }
-  .menu-item a[href="#home"]{
+  .menu-item a[href="#home"] {
     position: absolute;
-    top:13% !important;
-    right: 44% !important;;
-    bottom:60%;
-   
+    top: 13% !important;
+    right: 44% !important;
+    bottom: 60%;
   }
-  
-  .menu-item a[href="#imgs"]{
+
+  .menu-item a[href="#imgs"] {
     position: absolute;
-    top:44%;
-    right:32% !important;
-    bottom:10%;
+    top: 44%;
+    right: 32% !important;
+    bottom: 10%;
   }
 
   .menuBurgerList a {
@@ -218,6 +218,7 @@
   .logo {
     position: absolute;
     top: 5%;
+    margin-left: -70% !important;
   }
   header {
     height: 80vh !important;
@@ -248,7 +249,7 @@
     grid-template-columns: repeat(1, 75vw) !important;
     grid-auto-rows: 23rem !important;
     padding-top: 4%;
-    padding-left: 10% !important;
+    padding-left: 9.2% !important;
     width: 100%;
     position: relative;
   }
@@ -271,19 +272,18 @@
     width: 0;
   }
 
-  .menu-item a[href="#home"]{
+  .menu-item a[href="#home"] {
     position: absolute;
-    top:13% !important;
-    right: 24% !important;;
-    bottom:60%;
-   
+    top: 13% !important;
+    right: 24% !important;
+    bottom: 60%;
   }
-  
-  .menu-item a[href="#imgs"]{
+
+  .menu-item a[href="#imgs"] {
     position: absolute;
-    top:44%;
-    right:8% !important;
-    bottom:10%;
+    top: 44%;
+    right: 8% !important;
+    bottom: 10%;
   }
 
   .menuBurgerList a {
@@ -324,6 +324,7 @@
     padding-top: 4%;
     width: 100%;
     position: relative;
+    padding-left: 5.5% !important;
   }
 
   .imagesMain img {
