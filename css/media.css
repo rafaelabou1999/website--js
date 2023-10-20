@@ -324,9 +324,44 @@
     padding-top: 4%;
     width: 100%;
     position: relative;
-    padding-left: 5.5% !important;
+    padding-left: max(5%, 1.3rem) !important;
   }
 
+  .imagesMain img {
+    width: 18rem !important;
+    height: 22rem !important;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .imagesMain {
+    display: grid;
+    grid-template-columns: repeat(1, 17rem) !important;
+    grid-auto-rows: 19rem !important;
+    padding-top: 4%;
+    width: 100%;
+    position: relative;
+    padding-left: 0% !important;
+  }
+
+  .imagesMain img {
+    width: 15rem !important;
+    height: 18rem !important;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 374px) and (min-width: 360px) {
+  .imagesMain {
+    display: grid;
+    grid-template-columns: repeat(1, 19rem) !important;
+    grid-auto-rows: 23rem !important;
+    padding-top: 4%;
+    width: 100%;
+    position: relative;
+    padding-left: 4.5% !important;
+  }
   .imagesMain img {
     width: 18rem !important;
     height: 22rem !important;
